@@ -1,3 +1,8 @@
 FROM ubuntu:18.04
-ADD hello /
-CMD ["/hello"]
+
+WORKDIR /app
+
+COPY hello .
+COPY hello.sh .
+
+CMD ["/bin/bash", "hello.sh"]

@@ -3,10 +3,7 @@
 
 int main(void)
 {
-    while (1) {
-        printf("Hello Docker!\n");
-        sleep(5);
-    }
+    printf("Hello Docker!\n");
 
     return 0;
 }
